@@ -2,6 +2,10 @@
 Immagine, titolo e testo sono racchiusi in una card, uno sotto l’altro
  */
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .container {
     padding-top: 50px;
     width: 900px;
@@ -21,9 +25,16 @@ Immagine, titolo e testo sono racchiusi in una card, uno sotto l’altro
 
 .off {
     display: none;
-    color: red;
     text-align: center;
     padding: 15px 0;
+}
+
+.bigTitle {
+    color: red;
+}
+
+.price {
+    color: green;
 }
 
 
@@ -35,10 +46,24 @@ Immagine, titolo e testo sono racchiusi in una card, uno sotto l’altro
     position: absolute;
     bottom: 5%;
     left: 50%;
+    background-color: red;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .up {
     position: absolute;
     top: 12%;
     left: 50%;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fa-angle-up {
+    font-size: 1rem;
+}
+
+.fa-angle-down {
+    font-size: 1rem;
 }
