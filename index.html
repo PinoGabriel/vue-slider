@@ -11,6 +11,9 @@
 <body>
     
     <div id="app">   
+        <div class="selectImg">
+        <img v-for="(slide, i) in slides" :src="slide.immagine" class="imgMiniatura" :class="{ filterImage: (i == slideStart) }" @click="selectSlide(i)">
+        </div>  
         <div class="container">
             <img v-for="(slide, i) in slides" :src="slide.immagine" class="imgStyle" :class="{ imgActive: (i == slideStart) }">
             <button class="down" @click="fCaroselIndietro()"><i class="fa-solid fa-angle-down"></i></button>

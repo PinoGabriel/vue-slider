@@ -41,6 +41,9 @@ const { createApp } = Vue
             } else {
                 this.slideStart = this.slides.length -1
             }
+          },
+          selectSlide(index) {
+            this.slideStart = (index)
           }
     }
 

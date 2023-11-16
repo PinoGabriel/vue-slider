@@ -67,3 +67,23 @@ body {
 .fa-angle-down {
     font-size: 1rem;
 }
+
+.selectImg {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+
+.imgMiniatura {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+.filterImage {
+    filter: brightness(1);
+    border: 2px solid yellow;
+}
