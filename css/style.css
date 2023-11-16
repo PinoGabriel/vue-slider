@@ -44,27 +44,29 @@ body {
 
 .down {
     position: absolute;
-    bottom: 5%;
-    left: 50%;
+    top: 50%;
+    left: 5%;
     background-color: red;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .up {
     position: absolute;
-    top: 12%;
-    left: 50%;
+    top: 50%;
+    right: 5%;
     background-color: aqua;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-.fa-angle-up {
+.fa-angle-right {
     font-size: 1rem;
 }
 
-.fa-angle-down {
+.fa-angle-left {
     font-size: 1rem;
 }
 
@@ -81,6 +83,7 @@ body {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.3);
+    cursor: pointer;
 }
 
 .filterImage {

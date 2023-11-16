@@ -16,8 +16,8 @@
         </div>  
         <div class="container">
             <img v-for="(slide, i) in slides" :src="slide.immagine" class="imgStyle" :class="{ imgActive: (i == slideStart) }">
-            <button class="down" @click="fCaroselIndietro()"><i class="fa-solid fa-angle-down"></i></button>
-            <button class="up" @click="fCaroselAvanti()"><i class="fa-solid fa-angle-up"></i></button>
+            <button class="down" @click="fCaroselIndietro()"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="up" @click="fCaroselAvanti()"><i class="fa-solid fa-angle-right"></i></button>
         </div>
         <h1 v-for="(slide, i) in slides" class="off bigTitle" :class="{ imgActive: (i == slideStart) }">{{ slide.nome }}</h1>
         <h4 v-for="(slide, i) in slides" class="off" :class="{ imgActive: (i == slideStart) }">{{ slide.descrizione }}</h4>
