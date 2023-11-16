@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueSlider</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div id="app">
+       
+        <div class="container">
+            <img v-for="(slide, i) in slides" :src="slide.immagine" class="imgStyle" :class="{ imgActive: (i == slideStart) }">
+            <button class="down" @click="fCaroselIndietro()"><i class="fa-solid fa-angle-down"></i></button>
+            <button class="up" @click="fCaroselAvanti()"><i class="fa-solid fa-angle-up"></i></button>
+        </div>
+        <div v-for="(slide, i) in slides" class="off" :class="{ imgActive: (i == slideStart) }">{{ slide.nome }}</div>
+        <div v-for="(slide, i) in slides" class="off" :class="{ imgActive: (i == slideStart) }">{{ slide.descrizione }}</div>
+        <div v-for="(slide, i) in slides" class="off" :class="{ imgActive: (i == slideStart) }">{{ slide.prezzo }}</div>
+    </div>
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

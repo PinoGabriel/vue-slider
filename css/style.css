@@ -1,0 +1,44 @@
+/* TRACCIA B - Slider con prodotti
+Immagine, titolo e testo sono racchiusi in una card, uno sotto l’altro
+ */
+
+.container {
+    padding-top: 50px;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imgStyle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: none;
+}
+
+
+.off {
+    display: none;
+    color: red;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.imgActive {
+    display: block;
+}
+
+.down {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+.up {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+}
